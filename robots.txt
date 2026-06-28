@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tbj88.github.io/taizhou-kaduosi-import-export/sitemap.xml
