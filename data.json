@@ -1,0 +1,89 @@
+{
+  "brand": {
+    "name": "Kaduosi Auto Interiors",
+    "legalName": "Taizhou Kaduosi Import And Export Co., Ltd.",
+    "shortName": "Kaduosi",
+    "location": "Zhejiang, China",
+    "email": "",
+    "contactPerson": "Mr. wei Tang",
+    "sourceStore": "https://carsupplie.en.alibaba.com/productlist.html",
+    "positioning": {
+      "en": "Premium custom automotive interior accessories supplier",
+      "zh": "高端汽车内饰定制供应商",
+      "de": "Premium-Anbieter fuer kundenspezifisches Autozubehoer",
+      "es": "Proveedor premium de interiores automotrices personalizados"
+    }
+  },
+  "hero": [
+    {
+      "img": "https://s.alicdn.com/@sc04/kf/H4cf4e70bfc5841e69aa43ad7e3aeb2deT/High-end-Leather-Car-Seat-Covers-All.jpg?hasNWGrade=1",
+      "kicker": {"en":"CUSTOM AUTOMOTIVE INTERIORS","zh":"高端汽车内饰定制","de":"INDIVIDUELLE AUTO-INNENRAEUME","es":"INTERIORES AUTOMOTRICES A MEDIDA"},
+      "title": {"en":"Premium Seat Cover Systems for Global Auto Accessory Buyers","zh":"面向全球汽配买家的高端座套系统","de":"Premium-Sitzbezuege fuer globale Autozubehoer-Kaeufer","es":"Sistemas premium de fundas para compradores globales"},
+      "sub": {"en":"From universal leather sets to model-specific full-coverage solutions, Kaduosi helps distributors build a sharper automotive interior offer.","zh":"从通用皮革套装到车型定制全包围方案，Kaduosi 帮助经销商打造更高端的汽车内饰产品线。","de":"Von universellen Leder-Sets bis zu fahrzeugspezifischen Komplettloesungen.","es":"Desde sets universales de cuero hasta soluciones de cobertura completa por modelo."},
+      "ctaPrimary": {"en":"Explore Catalog","zh":"查看产品目录","de":"Katalog ansehen","es":"Ver catalogo"},
+      "ctaGhost": {"en":"Build OEM Program","zh":"定制 OEM 方案","de":"OEM-Programm planen","es":"Crear programa OEM"}
+    },
+    {
+      "img": "https://s.alicdn.com/@sc04/kf/Hb02cad7cb54a4076b8a2ba3552af4cb8G/Luxury-Custom-made-Genuine-Leather-Car_1601632927032.jpg?hasNWGrade=1",
+      "kicker": {"en":"LUXURY CUSTOM FIT","zh":"豪华车型定制","de":"LUXUS-PASSFORM","es":"AJUSTE DE LUJO"},
+      "title": {"en":"Designed for Tesla, BMW, Mercedes-Benz, Toyota and More","zh":"适配 Tesla、BMW、Mercedes-Benz、Toyota 等车型","de":"Entwickelt fuer Tesla, BMW, Mercedes-Benz, Toyota und mehr","es":"Disenado para Tesla, BMW, Mercedes-Benz, Toyota y mas"},
+      "sub": {"en":"Model-ready patterns, waterproof leather surfaces and all-season comfort for car modification stores and importers.","zh":"车型版型、防水皮革表面与四季舒适体验，适合改装店与进口商主推。","de":"Modellgerechte Schnitte, wasserfeste Lederoberflaechen und Komfort fuer jede Saison.","es":"Patrones por modelo, cuero impermeable y comodidad para todas las estaciones."},
+      "ctaPrimary": {"en":"View Custom Fit Lines","zh":"查看定制系列","de":"Custom-Linien ansehen","es":"Ver lineas a medida"},
+      "ctaGhost": {"en":"Request Samples","zh":"申请样品","de":"Muster anfragen","es":"Solicitar muestras"}
+    },
+    {
+      "img": "https://s.alicdn.com/@sc04/kf/H23361edc971c4fcb9cc17d5d3c4c0f08B/High-quality-Universal-Luxury-Leather-Car-Seat.jpg_480x480.jpg?hasNWGrade=1",
+      "kicker": {"en":"DISTRIBUTOR READY","zh":"经销商友好","de":"BEREIT FUER DISTRIBUTOREN","es":"LISTO PARA DISTRIBUIDORES"},
+      "title": {"en":"Low-MOQ Trial Orders, Full-Set Options and Fast Product Expansion","zh":"低 MOQ 试单、全套选项与快速扩品能力","de":"Niedrige MOQ, Komplettsets und schnelle Sortimentserweiterung","es":"MOQ bajo, sets completos y expansion rapida"},
+      "sub": {"en":"A catalog built around fast-moving automotive interior upgrades: seat covers, steering wheel covers, cushions, mats and protection accessories.","zh":"围绕高动销汽车内饰升级构建目录：座套、方向盘套、坐垫、脚垫与防护配件。","de":"Ein Katalog fuer schnell drehende Innenraum-Upgrades.","es":"Un catalogo para mejoras de interior automotriz de alta rotacion."},
+      "ctaPrimary": {"en":"See Hot Products","zh":"查看热销产品","de":"Top-Produkte ansehen","es":"Ver productos clave"},
+      "ctaGhost": {"en":"Partner With Us","zh":"成为合作伙伴","de":"Partner werden","es":"Ser socio"}
+    }
+  ],
+  "metrics": [
+    {"value":"1YR", "label":{"en":"Gold Supplier","zh":"金品供应商","de":"Gold Supplier","es":"Proveedor Gold"}},
+    {"value":"14+", "label":{"en":"Product Categories","zh":"产品类目","de":"Produktkategorien","es":"Categorias"}},
+    {"value":"1 pc", "label":{"en":"Custom Trial MOQ","zh":"定制试单 MOQ","de":"Custom-MOQ","es":"MOQ personalizado"}},
+    {"value":"50 sets", "label":{"en":"Wholesale MOQ","zh":"批发 MOQ","de":"Grosshandels-MOQ","es":"MOQ mayorista"}},
+    {"value":"17h", "label":{"en":"Listed Response Time","zh":"页面响应时长","de":"Antwortzeit","es":"Tiempo de respuesta"}},
+    {"value":"20", "label":{"en":"Catalog Pages","zh":"产品页数","de":"Katalogseiten","es":"Paginas de catalogo"}}
+  ],
+  "why": [
+    {"icon":"01", "title":{"en":"Premium Leather Look","zh":"高端皮革质感","de":"Premium-Lederoptik","es":"Aspecto premium de cuero"}, "desc":{"en":"High-end visual language for car owners who want a cleaner, more luxurious cabin upgrade.","zh":"面向追求高级座舱升级的车主，突出干净、豪华、耐用的视觉语言。","de":"Hochwertige Optik fuer ein eleganteres Fahrzeuginterieur.","es":"Lenguaje visual premium para una cabina mas lujosa."}, "link":"#catalog"},
+    {"icon":"02", "title":{"en":"Custom Fit Programs","zh":"车型定制能力","de":"Fahrzeugspezifische Programme","es":"Programas a medida"}, "desc":{"en":"Suitable for model-specific programs including Tesla, BYD, Toyota, BMW and Mercedes-Benz series.","zh":"适合围绕 Tesla、BYD、Toyota、BMW、Mercedes-Benz 等车型开发定制产品线。","de":"Geeignet fuer Tesla, BYD, Toyota, BMW und Mercedes-Benz Serien.","es":"Apto para programas Tesla, BYD, Toyota, BMW y Mercedes-Benz."}, "link":"#catalog"},
+    {"icon":"03", "title":{"en":"Distributor-Friendly Range","zh":"经销商友好产品线","de":"Distributorenfreundliches Sortiment","es":"Gama para distribuidores"}, "desc":{"en":"Seat covers, cushions, steering wheel covers, sunshades, mats and protection accessories in one sourcing basket.","zh":"座套、坐垫、方向盘套、遮阳、脚垫、防护配件一站式组合采购。","de":"Sitzbezuege, Kissen, Lenkradbezuege, Sonnenblenden und Matten.","es":"Fundas, cojines, cubrevolantes, parasoles y alfombrillas."}, "link":"#categories"},
+    {"icon":"04", "title":{"en":"Sample-to-Wholesale Path","zh":"试单到批量路径","de":"Von Muster zu Grosshandel","es":"De muestra a mayorista"}, "desc":{"en":"Selected customized lines support low trial quantities, while wholesale products scale to set-based orders.","zh":"部分定制系列支持低数量试单，批发产品可扩展到套装订单。","de":"Ausgewaehlte Linien unterstuetzen kleine Testmengen.","es":"Lineas seleccionadas admiten pedidos de prueba bajos."}, "link":"#contact"},
+    {"icon":"05", "title":{"en":"All-Season Protection","zh":"四季防护体验","de":"Ganzjahresschutz","es":"Proteccion todo el ano"}, "desc":{"en":"Waterproof, breathable, anti-slip and wear-resistant selling points fit daily driving and family car scenarios.","zh":"防水、透气、防滑、耐磨卖点适合日常通勤与家庭用车场景。","de":"Wasserfest, atmungsaktiv, rutschfest und verschleissarm.","es":"Impermeable, transpirable, antideslizante y resistente."}, "link":"#catalog"},
+    {"icon":"06", "title":{"en":"Brand-Ready OEM Support","zh":"品牌化 OEM 支持","de":"OEM-Unterstuetzung","es":"Soporte OEM"}, "desc":{"en":"A stronger presentation layer for private-label buyers, Amazon sellers and automotive accessory distributors.","zh":"适合私标买家、Amazon 卖家与汽配经销商构建品牌化页面和系列化产品。","de":"Fuer Private-Label-Kaeufer, Amazon-Seller und Autozubehoer-Distributoren.","es":"Para compradores de marca privada, vendedores Amazon y distribuidores."}, "link":"#contact"}
+  ],
+  "categories": [
+    {"img":"https://s.alicdn.com/@sc04/kf/H4cf4e70bfc5841e69aa43ad7e3aeb2deT/High-end-Leather-Car-Seat-Covers-All.jpg?hasNWGrade=1", "title":{"en":"Custom Leather Seat Covers","zh":"定制皮革座套","de":"Massgefertigte Leder-Sitzbezuege","es":"Fundas de cuero a medida"}, "sub":{"en":"Model-specific full coverage for premium vehicles","zh":"高端车型全包围适配","de":"Vollabdeckung fuer Premium-Fahrzeuge","es":"Cobertura completa para vehiculos premium"}, "searchKey":"custom"},
+    {"img":"https://s.alicdn.com/@sc04/kf/H23361edc971c4fcb9cc17d5d3c4c0f08B/High-quality-Universal-Luxury-Leather-Car-Seat.jpg_480x480.jpg?hasNWGrade=1", "title":{"en":"Universal Full-Set Covers","zh":"通用全套座套","de":"Universelle Komplettsets","es":"Sets universales completos"}, "sub":{"en":"Fast-moving all-season leather-look sets","zh":"四季通用高动销皮革套装","de":"Ganzjahres-Sets in Lederoptik","es":"Sets de cuero para todo el ano"}, "searchKey":"universal"},
+    {"img":"https://s.alicdn.com/@sc04/kf/H73359a3fe0c7463a87d152fc7b55e59ds/High-quality-Leather-Single-Seat-Water-Proof.jpg_480x480.jpg?hasNWGrade=1", "title":{"en":"Interior Protection Accessories","zh":"汽车内饰防护配件","de":"Innenraum-Schutzaccessoires","es":"Accesorios de proteccion interior"}, "sub":{"en":"Seat protectors, cushions, mats and add-on items","zh":"单座保护垫、坐垫、脚垫与附加品","de":"Sitzschutz, Kissen, Matten und Zusatzartikel","es":"Protectores, cojines, alfombrillas y accesorios"}, "searchKey":"accessories"}
+  ],
+  "products": [
+    {"id":"p01","name":"High-end Leather Car Seat Covers All-inclusive Seat Covers Customized for Land Rover Audi BMW Toyota Mercedes-Benz Buick","sku":"1601696046464","price":"$90-110","moq":"1 piece","category":"custom","img":"https://s.alicdn.com/@sc04/kf/H4cf4e70bfc5841e69aa43ad7e3aeb2deT/High-end-Leather-Car-Seat-Covers-All.jpg?hasNWGrade=1","tags":["Custom fit","Premium leather","Full coverage"],"url":"https://www.alibaba.com/product-detail/High-end-Leather-Car-Seat-Covers_1601696046464.html"},
+    {"id":"p02","name":"Luxury Custom-made Genuine Leather Car Seat Covers Suitable for Tesla Model 3/Model Y/Model X/Model S Waterproof Seat Protectors","sku":"1601632927032","price":"$110-150","moq":"1 set","category":"custom","img":"https://s.alicdn.com/@sc04/kf/Hb02cad7cb54a4076b8a2ba3552af4cb8G/Luxury-Custom-made-Genuine-Leather-Car_1601632927032.jpg?hasNWGrade=1","tags":["Tesla fit","Waterproof","Genuine leather"],"url":"https://www.alibaba.com/product-detail/Luxury-Custom-made-Genuine-Leather-Car_1601632927032.html"},
+    {"id":"p03","name":"High-quality Universal Luxury Leather Car Seat Covers Perforated and Breathable 10-Piece Full Car Set for All Seasons","sku":"1601626162678","price":"$27-35","moq":"100 sets","category":"universal","img":"https://s.alicdn.com/@sc04/kf/H23361edc971c4fcb9cc17d5d3c4c0f08B/High-quality-Universal-Luxury-Leather-Car-Seat.jpg_480x480.jpg?hasNWGrade=1","tags":["10-piece set","Breathable","All season"],"url":"https://www.alibaba.com/product-detail/High-quality-Universal-Luxury-Leather-Car_1601626162678.html"},
+    {"id":"p04","name":"Leather Full Set Car Seat Covers Universal Fit for Most Vehicles Protective All-Season Waterproof Durable Auto Interior","sku":"1601640969940","price":"$26-31","moq":"50 sets","category":"universal","img":"https://s.alicdn.com/@sc04/kf/Hfb13d0b422e24f55a0b050b209e6d524P/Leather-Full-Set-Car-Seat-Covers-Universal.jpg?hasNWGrade=1","tags":["Universal fit","Waterproof","Durable"],"url":"https://www.alibaba.com/product-detail/Leather-Full-Set-Car-Seat-Covers_1601640969940.html"},
+    {"id":"p05","name":"High-quality Leather Car Seat Covers Full Set Anti-slip Waterproof with Lumbar Support Cushions Suitable for All Seasons","sku":"1601661839955","price":"$40-43","moq":"50 sets","category":"universal","img":"https://s.alicdn.com/@sc04/kf/H360b654e660b4939885468b9409f69abL/High-quality-Leather-Car-Seat-Covers-Full.jpg?hasNWGrade=1","tags":["Lumbar support","Anti-slip","Waterproof"],"url":"https://www.alibaba.com/product-detail/High-quality-Leather-Car-Seat-Covers_1601661839955.html"},
+    {"id":"p06","name":"High-quality Leather Single Seat Water Proof Car Seat Cover Protect Seat Pet Mat Baby Seat Protector and Driver's Seat Cushion","sku":"1601647290088","price":"$2.70-3.06","moq":"100 pieces","category":"accessories","img":"https://s.alicdn.com/@sc04/kf/H73359a3fe0c7463a87d152fc7b55e59ds/High-quality-Leather-Single-Seat-Water-Proof.jpg_480x480.jpg?hasNWGrade=1","tags":["Single seat","Pet mat","Baby seat protector"],"url":"https://www.alibaba.com/product-detail/High-quality-Leather-Single-Seat-Water_1601647290088.html"},
+    {"id":"p07","name":"High-end Custom Leather 2025 Yuan PLUS Intelligent Driving Version Car Seat Covers Five-seat Full Coverage Car Seat protection","sku":"1601636349641","price":"$45-60","moq":"1 piece","category":"custom","img":"https://s.alicdn.com/@sc04/kf/A57045111ba264e21b14f448aadd755a9H/High-end-Custom-Leather-2025-Yuan-PLUS.jpg?hasNWGrade=1","tags":["BYD Yuan PLUS","Full coverage","2025 model"],"url":"https://www.alibaba.com/product-detail/High-end-Custom-Leather-2025-Yuan_1601636349641.html"},
+    {"id":"p08","name":"Perforated and Breathable Leather Car Seat Covers for 2025 BYD Song PLUS DM-i Models Fully Covering Five Seats","sku":"1601623209750","price":"$50-65","moq":"1 set","category":"custom","img":"https://s.alicdn.com/@sc04/kf/A3c5a4eee30e44a35911fd3961b21d822E/Perforated-and-Breathable-Leather-Car-Seat-Covers.jpg?hasNWGrade=1","tags":["BYD Song PLUS","Perforated","Five seats"],"url":"https://www.alibaba.com/product-detail/Perforated-and-Breathable-Leather-Car-Seat_1601623209750.html"}
+  ],
+  "buyerProfiles": [
+    {"cat":"Auto Parts Distributor","t":"Build a premium seat-cover line","c":"Lead with custom-fit leather collections, then add universal full-set covers for faster stock rotation."},
+    {"cat":"Car Modification Shop","t":"Sell cabin upgrades as a package","c":"Bundle seat covers with steering wheel covers, cushions and mats to raise average order value."},
+    {"cat":"E-commerce Seller","t":"Test low-risk hero SKUs","c":"Start from waterproof, breathable, all-season products with clear model compatibility and lifestyle images."}
+  ],
+  "sop": [
+    {"cat":"Inquiry Reply","t":"Buyer asks for MOQ","c":"For customized model-specific seat covers, selected SKUs support trial orders from 1 piece or 1 set. For wholesale universal sets, MOQ usually starts from 50-100 sets depending on material and packaging."},
+    {"cat":"Product Pitch","t":"Why custom fit matters","c":"Custom-fit covers help buyers avoid loose installation, poor visual finish and customer complaints. Recommend them for premium vehicles and modification stores."},
+    {"cat":"Upsell","t":"From one SKU to collection","c":"After confirming the main vehicle model, suggest matching steering wheel covers, mats and seat protectors to create a complete interior upgrade package."}
+  ],
+  "sections": {
+    "contactEmail": "",
+    "contactTitle": {"en":"Build your next automotive interior line","zh":"打造你的下一条汽车内饰产品线","de":"Bauen Sie Ihre naechste Auto-Innenraumlinie auf","es":"Cree su proxima linea de interiores automotrices"},
+    "contactSub": {"en":"Send target vehicle models, market, preferred material and order quantity. The Kaduosi team can prepare a quote and sampling plan.","zh":"发送目标车型、市场、偏好材质与订单数量，Kaduosi 团队可准备报价与打样方案。","de":"Senden Sie Fahrzeugmodelle, Markt, Material und Menge.","es":"Envie modelos, mercado, material preferido y cantidad."}
+  }
+}
