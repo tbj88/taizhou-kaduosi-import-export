@@ -6,51 +6,63 @@
 <title>Select Region / Language | Kaduosi</title>
 <meta name="description" content="Select your region and language for Kaduosi automotive interior systems.">
 <style>
-:root{--red:#c7000b;--ink:#111;--muted:#666;--line:#e6e6e6;--soft:#f7f7f7;--sans:Arial,'Helvetica Neue',sans-serif}*{box-sizing:border-box}body{margin:0;font-family:var(--sans);color:var(--ink);background:white}.topbar{height:36px;background:#f7f7f7;border-bottom:1px solid var(--line);display:flex;justify-content:flex-end;gap:28px;align-items:center;padding:0 7vw;font-size:13px;color:#555}.topbar a{text-decoration:none;color:#555}.topbar a.active{color:#111;font-weight:700}.top{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 7vw}.brand{display:flex;gap:12px;align-items:center;font-size:23px;font-weight:700;text-decoration:none;color:#111}.mark{width:34px;height:34px;border-radius:50%;background:var(--red);color:white;display:grid;place-items:center}.top a.back{color:#555;text-decoration:none}.wrap{padding:66px 7vw 86px}.wrap h1{font-size:32px;margin:0 0 38px}.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:24px 64px;max-width:1480px}.regions a{display:block;color:#666;text-decoration:none;font-size:17px;padding:4px 0}.regions a:hover{color:var(--red)}.regions a.current{color:#111;font-weight:700}.regions a.current:before{content:'› ';color:var(--red)}.footer{border-top:1px solid var(--line);background:var(--soft);padding:28px 7vw;color:#666;display:flex;justify-content:space-between}.float{position:fixed;right:18px;bottom:28px;width:42px;height:42px;border-radius:50%;background:#f7a9c0;color:white;display:grid;place-items:center;font-weight:700}@media(max-width:980px){.regions{grid-template-columns:repeat(2,1fr)}.wrap,.top{padding-left:24px;padding-right:24px}.topbar{display:none}}@media(max-width:560px){.regions{grid-template-columns:1fr}.footer{display:block}.wrap h1{font-size:28px}}
+:root{--red:#c7000b;--ink:#111;--muted:#666;--line:#e6e6e6;--soft:#f7f7f7;--sans:Arial,'Helvetica Neue',sans-serif}*{box-sizing:border-box}body{margin:0;font-family:var(--sans);color:var(--ink);background:white}.topbar{height:36px;background:#f7f7f7;border-bottom:1px solid var(--line);display:flex;justify-content:flex-end;gap:28px;align-items:center;padding:0 7vw;font-size:13px;color:#555}.topbar a{text-decoration:none;color:#555}.topbar a.active{color:#111;font-weight:700}.top{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 7vw}.brand{display:flex;gap:12px;align-items:center;font-size:23px;font-weight:700;text-decoration:none;color:#111}.mark{width:34px;height:34px;border-radius:50%;background:var(--red);color:white;display:grid;place-items:center}.top a.back{color:#555;text-decoration:none}.wrap{padding:66px 7vw 86px}.wrap h1{font-size:32px;margin:0 0 12px}.wrap .sub{color:#666;margin:0 0 38px;max-width:680px}.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 48px;max-width:1080px}.regions a{display:flex;align-items:center;justify-content:space-between;gap:16px;color:#333;text-decoration:none;font-size:17px;padding:16px 20px;border:1px solid var(--line);border-radius:10px;background:#fff;transition:all .15s}.regions a:hover{border-color:var(--red);color:var(--red);transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.05)}.regions a.current{border-color:var(--red);color:var(--red);background:#fff7f7}.regions a .rlabel{font-weight:600}.regions a .rcode{font-size:12px;color:#999;text-transform:uppercase;letter-spacing:.08em}.regions a.current .rcode{color:var(--red)}.footer{border-top:1px solid var(--line);background:var(--soft);padding:28px 7vw;color:#666;display:flex;justify-content:space-between}@media(max-width:980px){.regions{grid-template-columns:repeat(2,1fr)}.wrap,.top{padding-left:24px;padding-right:24px}.topbar{display:none}}@media(max-width:560px){.regions{grid-template-columns:1fr}.footer{display:block}.wrap h1{font-size:28px}}
 </style>
 </head>
 <body>
 <div class="topbar"><a href="group.html">▦ Group Websites</a><a class="active" href="region.html">◎ Select Region / Language</a></div>
 <header class="top"><a class="brand" href="index.html"><span class="mark">K</span><span>Kaduosi</span></a><a class="back" href="index.html">Back to website</a></header>
-<main class="wrap"><h1>选择区域/语言</h1><div class="regions">
-<a href="index.html?lang=en">Australia - English</a>
-<a href="index.html?lang=pt">Brazil - Português</a>
-<a class="current" href="index.html?lang=zh">China - 简体中文</a>
-<a href="index.html?lang=en">Europe - English</a>
-<a href="index.html?lang=fr">France - Français</a>
-<a href="index.html?lang=de">Germany - Deutsch</a>
-<a href="index.html?lang=en">Ireland - English</a>
-<a href="index.html?lang=it">Italy - Italiano</a>
-<a href="index.html?lang=ja">Japan - 日本語</a>
-<a href="index.html?lang=kk">Kazakhstan - Қазақ тілі</a>
-<a href="index.html?lang=ru">Kazakhstan - Русский</a>
-<a href="index.html?lang=en">Kenya - English</a>
-<a href="index.html?lang=ko">Korea - 한국어</a>
-<a href="index.html?lang=en">Malaysia - English</a>
-<a href="index.html?lang=es">Mexico - Español</a>
-<a href="index.html?lang=mn">Mongolia - Монгол</a>
-<a href="index.html?lang=en">New Zealand - English</a>
-<a href="index.html?lang=nl">Netherlands - Nederlands</a>
-<a href="index.html?lang=pl">Poland - Polski</a>
-<a href="index.html?lang=ro">Romania - Română</a>
-<a href="index.html?lang=en">Singapore - English</a>
-<a href="index.html?lang=en">South Africa - English</a>
-<a href="index.html?lang=es">Spain - Español</a>
-<a href="index.html?lang=de">Switzerland - Deutsch</a>
-<a href="index.html?lang=fr">Switzerland - Français</a>
-<a href="index.html?lang=it">Switzerland - Italiano</a>
-<a href="index.html?lang=en">Switzerland - English</a>
-<a href="index.html?lang=en">Tanzania - English</a>
-<a href="index.html?lang=th">Thailand - ภาษาไทย</a>
-<a href="index.html?lang=tr">Türkiye - Türkçe</a>
-<a href="index.html?lang=uk">Ukraine - Українська</a>
-<a href="index.html?lang=en">United Kingdom - English</a>
-<a href="index.html?lang=ru">Uzbekistan - Русский</a>
-<a href="index.html?lang=uz">Uzbekistan - O'zbek</a>
-<a href="index.html?lang=vi">Vietnam - Tiếng Việt</a>
-<a href="index.html?lang=en">Global - English</a>
-</div></main>
-<div class="float">文</div>
-<footer class="footer"><span>Kaduosi Automotive Interior Systems</span><span>Taizhou Kaduosi Import And Export Co., Ltd.</span></footer>
+<main class="wrap">
+  <h1 id="pageTitle">Select Region / Language</h1>
+  <p class="sub" id="pageSub">Choose your preferred language. Only supported languages are listed; more coming soon.</p>
+  <div class="regions">
+    <a data-lang="en" href="index.html?lang=en"><span class="rlabel">Global — English</span><span class="rcode">EN</span></a>
+    <a data-lang="en" href="index.html?lang=en"><span class="rlabel">United States — English</span><span class="rcode">EN</span></a>
+    <a data-lang="en" href="index.html?lang=en"><span class="rlabel">United Kingdom — English</span><span class="rcode">EN</span></a>
+    <a data-lang="zh" href="index.html?lang=zh"><span class="rlabel">中国 — 简体中文</span><span class="rcode">ZH</span></a>
+    <a data-lang="de" href="index.html?lang=de"><span class="rlabel">Deutschland — Deutsch</span><span class="rcode">DE</span></a>
+    <a data-lang="es" href="index.html?lang=es"><span class="rlabel">España — Español</span><span class="rcode">ES</span></a>
+    <a data-lang="es" href="index.html?lang=es"><span class="rlabel">México — Español</span><span class="rcode">ES</span></a>
+    <a data-lang="de" href="index.html?lang=de"><span class="rlabel">Schweiz — Deutsch</span><span class="rcode">DE</span></a>
+  </div>
+</main>
+<footer class="footer"><span id="footBrand">Kaduosi Automotive Interior Systems</span><span>Taizhou Kaduosi Import And Export Co., Ltd.</span></footer>
+<script>
+(function(){
+  var STRINGS = {
+    en:{t:"Select Region / Language", s:"Choose your preferred language. Only supported languages are listed; more coming soon.", b:"Kaduosi Automotive Interior Systems", back:"Back to website", group:"▦ Group Websites", region:"◎ Select Region / Language"},
+    zh:{t:"选择区域 / 语言", s:"请选择您偏好的语言。目前仅列出已上线的语言，更多语言即将开放。", b:"Kaduosi 汽车内饰系统", back:"返回网站", group:"▦ 集团网站", region:"◎ 选择区域 / 语言"},
+    de:{t:"Region / Sprache wählen", s:"Wählen Sie Ihre bevorzugte Sprache. Nur unterstützte Sprachen werden aufgelistet; weitere folgen.", b:"Kaduosi Auto-Innenraumsysteme", back:"Zurück zur Website", group:"▦ Gruppenwebsites", region:"◎ Region / Sprache wählen"},
+    es:{t:"Seleccionar región / idioma", s:"Elija su idioma preferido. Solo se muestran los idiomas admitidos; próximamente habrá más.", b:"Kaduosi Sistemas de Interior Automotriz", back:"Volver al sitio", group:"▦ Sitios del grupo", region:"◎ Seleccionar región / idioma"}
+  };
+  function currentLang(){
+    var q = new URLSearchParams(location.search).get("lang");
+    if(q && STRINGS[q]) return q;
+    var s; try{ s = localStorage.getItem("kd_lang"); }catch(e){}
+    if(s && STRINGS[s]) return s;
+    var nav = (navigator.language||"en").toLowerCase();
+    if(nav.indexOf("zh")===0) return "zh";
+    if(nav.indexOf("de")===0) return "de";
+    if(nav.indexOf("es")===0) return "es";
+    return "en";
+  }
+  var cur = currentLang();
+  var s = STRINGS[cur] || STRINGS.en;
+  document.documentElement.setAttribute("lang", {en:"en",zh:"zh-CN",de:"de",es:"es"}[cur]);
+  document.getElementById("pageTitle").textContent = s.t;
+  document.getElementById("pageSub").textContent = s.s;
+  document.getElementById("footBrand").textContent = s.b;
+  document.querySelector(".top .back").textContent = s.back;
+  var tb = document.querySelectorAll(".topbar a");
+  if(tb[0]) tb[0].textContent = s.group;
+  if(tb[1]) tb[1].textContent = s.region;
+  document.querySelectorAll(".regions a").forEach(function(a){
+    if(a.getAttribute("data-lang") === cur) a.classList.add("current");
+    a.addEventListener("click", function(){
+      try{ localStorage.setItem("kd_lang", a.getAttribute("data-lang")); }catch(e){}
+    });
+  });
+})();
+</script>
 </body>
 </html>
