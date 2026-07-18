@@ -6,34 +6,129 @@
 <title>Select Region / Language | Kaduosi</title>
 <meta name="description" content="Select your region and language for Kaduosi automotive interior systems.">
 <style>
-:root{--red:#c7000b;--ink:#111;--muted:#666;--line:#e6e6e6;--soft:#f7f7f7;--sans:Arial,'Helvetica Neue',sans-serif}*{box-sizing:border-box}body{margin:0;font-family:var(--sans);color:var(--ink);background:white}.topbar{height:36px;background:#f7f7f7;border-bottom:1px solid var(--line);display:flex;justify-content:flex-end;gap:28px;align-items:center;padding:0 7vw;font-size:13px;color:#555}.topbar a{text-decoration:none;color:#555}.topbar a.active{color:#111;font-weight:700}.top{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 7vw}.brand{display:flex;gap:12px;align-items:center;font-size:23px;font-weight:700;text-decoration:none;color:#111}.mark{width:34px;height:34px;border-radius:50%;background:var(--red);color:white;display:grid;place-items:center}.top a.back{color:#555;text-decoration:none}.wrap{padding:66px 7vw 86px}.wrap h1{font-size:32px;margin:0 0 12px}.wrap .sub{color:#666;margin:0 0 38px;max-width:680px}.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 48px;max-width:1080px}.regions a{display:flex;align-items:center;justify-content:space-between;gap:16px;color:#333;text-decoration:none;font-size:17px;padding:16px 20px;border:1px solid var(--line);border-radius:10px;background:#fff;transition:all .15s}.regions a:hover{border-color:var(--red);color:var(--red);transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.05)}.regions a.current{border-color:var(--red);color:var(--red);background:#fff7f7}.regions a .rlabel{font-weight:600}.regions a .rcode{font-size:12px;color:#999;text-transform:uppercase;letter-spacing:.08em}.regions a.current .rcode{color:var(--red)}.footer{border-top:1px solid var(--line);background:var(--soft);padding:28px 7vw;color:#666;display:flex;justify-content:space-between}@media(max-width:980px){.regions{grid-template-columns:repeat(2,1fr)}.wrap,.top{padding-left:24px;padding-right:24px}.topbar{display:none}}@media(max-width:560px){.regions{grid-template-columns:1fr}.footer{display:block}.wrap h1{font-size:28px}}
+:root{--red:#c7000b;--ink:#111;--muted:#666;--line:#e6e6e6;--soft:#f7f7f7;--sans:Arial,'Helvetica Neue',sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:white}
+.topbar{height:36px;background:#f7f7f7;border-bottom:1px solid var(--line);display:flex;justify-content:flex-end;gap:28px;align-items:center;padding:0 7vw;font-size:13px;color:#555}
+.topbar a{text-decoration:none;color:#555}
+.topbar a.active{color:#111;font-weight:700}
+.top{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 7vw}
+.brand{display:flex;gap:12px;align-items:center;font-size:23px;font-weight:700;text-decoration:none;color:#111}
+.mark{width:34px;height:34px;border-radius:50%;background:var(--red);color:white;display:grid;place-items:center}
+.top a.back{color:#555;text-decoration:none;font-size:14px}
+.top a.back:hover{color:var(--red)}
+
+.wrap{padding:56px 7vw 26px}
+.wrap h1{font-size:30px;margin:0 0 10px;font-weight:700}
+.wrap .sub{color:#666;margin:0 0 26px;max-width:760px;font-size:14px}
+.filters{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:#fff;color:#333;font-size:13px;padding:6px 14px;border-radius:999px;cursor:pointer;font-family:var(--sans)}
+.chip:hover{border-color:var(--red);color:var(--red)}
+.chip.active{background:var(--red);color:#fff;border-color:var(--red)}
+.legend{font-size:12px;color:#999;margin:14px 0 0}
+.legend .dot-live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2f8f4a;margin-right:6px;vertical-align:middle}
+.legend .dot-soon{display:inline-block;width:8px;height:8px;border-radius:50%;background:#c9a02a;margin:0 6px 0 18px;vertical-align:middle}
+
+.regions{padding:0 7vw 80px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px 40px;max-width:1520px}
+.regions a{display:flex;align-items:center;gap:10px;color:#333;text-decoration:none;font-size:15px;padding:12px 4px;border-bottom:1px solid transparent;transition:all .12s;position:relative}
+.regions a:hover{color:var(--red);border-bottom-color:var(--line)}
+.regions a.current{color:var(--red);font-weight:700}
+.regions a.current:before{content:"›";position:absolute;left:-14px;color:var(--red);font-weight:700}
+.regions a .badge{font-size:10px;letter-spacing:.05em;padding:2px 6px;border-radius:3px;background:#f2f2f2;color:#999;text-transform:uppercase;font-weight:700}
+.regions a.live .badge{background:#e8f4ec;color:#2f8f4a}
+.regions a.soon .badge{background:#fbf2d9;color:#8a6a10}
+
+.footer{border-top:1px solid var(--line);background:var(--soft);padding:28px 7vw;color:#666;display:flex;justify-content:space-between;font-size:13px}
+
+@media(max-width:1200px){.regions{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:980px){.regions{grid-template-columns:repeat(3,1fr)}.topbar{display:none}.wrap,.top,.regions{padding-left:24px;padding-right:24px}}
+@media(max-width:640px){.regions{grid-template-columns:repeat(2,1fr)}.footer{display:block}.wrap h1{font-size:24px}}
 </style>
 </head>
 <body>
 <div class="topbar"><a href="group.html">▦ Group Websites</a><a class="active" href="region.html">◎ Select Region / Language</a></div>
-<header class="top"><a class="brand" href="index.html"><span class="mark">K</span><span>Kaduosi</span></a><a class="back" href="index.html">Back to website</a></header>
-<main class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><span class="mark">K</span><span>Kaduosi</span></a>
+  <a class="back" href="index.html">Back to website</a>
+</header>
+
+<section class="wrap">
   <h1 id="pageTitle">Select Region / Language</h1>
-  <p class="sub" id="pageSub">Choose your preferred language. Only supported languages are listed; more coming soon.</p>
-  <div class="regions">
-    <a data-lang="en" href="index.html?lang=en"><span class="rlabel">Global — English</span><span class="rcode">EN</span></a>
-    <a data-lang="en" href="index.html?lang=en"><span class="rlabel">United States — English</span><span class="rcode">EN</span></a>
-    <a data-lang="en" href="index.html?lang=en"><span class="rlabel">United Kingdom — English</span><span class="rcode">EN</span></a>
-    <a data-lang="zh" href="index.html?lang=zh"><span class="rlabel">中国 — 简体中文</span><span class="rcode">ZH</span></a>
-    <a data-lang="de" href="index.html?lang=de"><span class="rlabel">Deutschland — Deutsch</span><span class="rcode">DE</span></a>
-    <a data-lang="es" href="index.html?lang=es"><span class="rlabel">España — Español</span><span class="rcode">ES</span></a>
-    <a data-lang="es" href="index.html?lang=es"><span class="rlabel">México — Español</span><span class="rcode">ES</span></a>
-    <a data-lang="de" href="index.html?lang=de"><span class="rlabel">Schweiz — Deutsch</span><span class="rcode">DE</span></a>
+  <p class="sub" id="pageSub">Choose the region you serve. Languages marked <b>Live</b> are fully translated; others fall back to English and show a <b>Soon</b> badge until their translation is finalised.</p>
+  <div class="filters">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="asia">Asia</button>
+    <button class="chip" data-filter="europe">Europe</button>
+    <button class="chip" data-filter="americas">Americas</button>
+    <button class="chip" data-filter="africa">Africa</button>
+    <button class="chip" data-filter="oceania">Oceania</button>
   </div>
-</main>
-<footer class="footer"><span id="footBrand">Kaduosi Automotive Interior Systems</span><span>Taizhou Kaduosi Import And Export Co., Ltd.</span></footer>
+  <p class="legend"><span class="dot-live"></span>Live translation<span class="dot-soon"></span>Coming soon (English shown for now)</p>
+</section>
+
+<section class="regions" id="grid">
+  <!-- Global + EU umbrella -->
+  <a data-lang="en" data-live="1" data-region="all" href="index.html?lang=en"><span class="rlabel">Global — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="europe" href="index.html?lang=en"><span class="rlabel">Europe — English</span><span class="badge">Live</span></a>
+
+  <!-- Live: EN countries -->
+  <a data-lang="en" data-live="1" data-region="oceania" href="index.html?lang=en"><span class="rlabel">Australia — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="europe" href="index.html?lang=en"><span class="rlabel">Ireland — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="africa" href="index.html?lang=en"><span class="rlabel">Kenya — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="asia" href="index.html?lang=en"><span class="rlabel">Malaysia — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="oceania" href="index.html?lang=en"><span class="rlabel">New Zealand — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="asia" href="index.html?lang=en"><span class="rlabel">Singapore — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="africa" href="index.html?lang=en"><span class="rlabel">South Africa — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="europe" href="index.html?lang=en"><span class="rlabel">Switzerland — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="africa" href="index.html?lang=en"><span class="rlabel">Tanzania — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="europe" href="index.html?lang=en"><span class="rlabel">United Kingdom — English</span><span class="badge">Live</span></a>
+  <a data-lang="en" data-live="1" data-region="americas" href="index.html?lang=en"><span class="rlabel">United States — English</span><span class="badge">Live</span></a>
+
+  <!-- Live: ZH -->
+  <a data-lang="zh" data-live="1" data-region="asia" href="index.html?lang=zh"><span class="rlabel">中国 — 简体中文</span><span class="badge">Live</span></a>
+
+  <!-- Live: DE -->
+  <a data-lang="de" data-live="1" data-region="europe" href="index.html?lang=de"><span class="rlabel">Deutschland — Deutsch</span><span class="badge">Live</span></a>
+  <a data-lang="de" data-live="1" data-region="europe" href="index.html?lang=de"><span class="rlabel">Schweiz — Deutsch</span><span class="badge">Live</span></a>
+
+  <!-- Live: ES -->
+  <a data-lang="es" data-live="1" data-region="europe" href="index.html?lang=es"><span class="rlabel">España — Español</span><span class="badge">Live</span></a>
+  <a data-lang="es" data-live="1" data-region="americas" href="index.html?lang=es"><span class="rlabel">México — Español</span><span class="badge">Live</span></a>
+
+  <!-- Coming soon: English fallback for now -->
+  <a data-lang="en" data-live="0" data-region="americas" href="index.html?lang=en"><span class="rlabel">Brazil — Português</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">France — Français</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Italy — Italiano</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Japan — 日本語</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Kazakhstan — Қазақ тілі</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Kazakhstan — Русский</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Korea — 한국어</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Mongolia — Монгол</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Netherlands — Nederlands</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Poland — Polski</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Romania — Română</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Switzerland — Français</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Switzerland — Italiano</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Thailand — ภาษาไทย</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Türkiye — Türkçe</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="europe" href="index.html?lang=en"><span class="rlabel">Ukraine — Українська</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Uzbekistan — Русский</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Uzbekistan — O'zbek</span><span class="badge">Soon</span></a>
+  <a data-lang="en" data-live="0" data-region="asia" href="index.html?lang=en"><span class="rlabel">Vietnam — Tiếng Việt</span><span class="badge">Soon</span></a>
+</section>
+
+<footer class="footer">
+  <span id="footBrand">Kaduosi Automotive Interior Systems</span>
+  <span>Taizhou Kaduosi Import And Export Co., Ltd.</span>
+</footer>
+
 <script>
 (function(){
   var STRINGS = {
-    en:{t:"Select Region / Language", s:"Choose your preferred language. Only supported languages are listed; more coming soon.", b:"Kaduosi Automotive Interior Systems", back:"Back to website", group:"▦ Group Websites", region:"◎ Select Region / Language"},
-    zh:{t:"选择区域 / 语言", s:"请选择您偏好的语言。目前仅列出已上线的语言，更多语言即将开放。", b:"Kaduosi 汽车内饰系统", back:"返回网站", group:"▦ 集团网站", region:"◎ 选择区域 / 语言"},
-    de:{t:"Region / Sprache wählen", s:"Wählen Sie Ihre bevorzugte Sprache. Nur unterstützte Sprachen werden aufgelistet; weitere folgen.", b:"Kaduosi Auto-Innenraumsysteme", back:"Zurück zur Website", group:"▦ Gruppenwebsites", region:"◎ Region / Sprache wählen"},
-    es:{t:"Seleccionar región / idioma", s:"Elija su idioma preferido. Solo se muestran los idiomas admitidos; próximamente habrá más.", b:"Kaduosi Sistemas de Interior Automotriz", back:"Volver al sitio", group:"▦ Sitios del grupo", region:"◎ Seleccionar región / idioma"}
+    en:{t:"Select Region / Language", s:"Choose the region you serve. Languages marked Live are fully translated; others fall back to English and show a Soon badge until their translation is finalised.", b:"Kaduosi Automotive Interior Systems", back:"Back to website", group:"▦ Group Websites", region:"◎ Select Region / Language", legend1:"Live translation", legend2:"Coming soon (English shown for now)"},
+    zh:{t:"选择区域 / 语言", s:"请选择您服务的区域。标记为 Live 的语言已完成翻译；其他语言暂时以英文兜底，并会标注 Soon，我们正在逐步补齐。", b:"Kaduosi 汽车内饰系统", back:"返回网站", group:"▦ 集团网站", region:"◎ 选择区域 / 语言", legend1:"已上线翻译", legend2:"即将上线（当前显示英文）"},
+    de:{t:"Region / Sprache wählen", s:"Wählen Sie Ihre Region. Als Live markierte Sprachen sind vollständig übersetzt; andere fallen vorerst auf Englisch zurück und tragen ein Soon-Badge.", b:"Kaduosi Auto-Innenraumsysteme", back:"Zurück zur Website", group:"▦ Gruppenwebsites", region:"◎ Region / Sprache wählen", legend1:"Live-Übersetzung", legend2:"Bald verfügbar (vorerst Englisch)"},
+    es:{t:"Seleccionar región / idioma", s:"Elija la región que atiende. Los idiomas marcados como Live están totalmente traducidos; los demás muestran Inglés y un badge Soon hasta que se complete la traducción.", b:"Kaduosi Sistemas de Interior Automotriz", back:"Volver al sitio", group:"▦ Sitios del grupo", region:"◎ Seleccionar región / idioma", legend1:"Traducción activa", legend2:"Próximamente (por ahora en inglés)"}
   };
   function currentLang(){
     var q = new URLSearchParams(location.search).get("lang");
@@ -56,10 +151,35 @@
   var tb = document.querySelectorAll(".topbar a");
   if(tb[0]) tb[0].textContent = s.group;
   if(tb[1]) tb[1].textContent = s.region;
-  document.querySelectorAll(".regions a").forEach(function(a){
-    if(a.getAttribute("data-lang") === cur) a.classList.add("current");
-    a.addEventListener("click", function(){
-      try{ localStorage.setItem("kd_lang", a.getAttribute("data-lang")); }catch(e){}
+
+  // legend labels
+  var legendEl = document.querySelector('.legend');
+  if(legendEl){ legendEl.innerHTML = '<span class="dot-live"></span>' + s.legend1 + '<span class="dot-soon"></span>' + s.legend2; }
+
+  // tag live/soon links + mark current + persist choice
+  document.querySelectorAll('.regions a').forEach(function(a){
+    if(a.getAttribute('data-live') === '1') a.classList.add('live'); else a.classList.add('soon');
+    if(a.getAttribute('data-lang') === cur && a.getAttribute('data-live') === '1'){
+      // pick the first live match for current lang; but only highlight if matches shown label heuristic
+      // simpler: mark all live entries whose data-lang matches
+      a.classList.add('current');
+    }
+    a.addEventListener('click', function(){
+      try{ localStorage.setItem('kd_lang', a.getAttribute('data-lang')); }catch(e){}
+    });
+  });
+
+  // region filter chips
+  var chips = document.querySelectorAll('.chip');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      var f = chip.getAttribute('data-filter');
+      document.querySelectorAll('.regions a').forEach(function(a){
+        var r = a.getAttribute('data-region');
+        a.style.display = (f === 'all' || r === 'all' || r === f) ? '' : 'none';
+      });
     });
   });
 })();
